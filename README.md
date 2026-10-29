@@ -185,7 +185,9 @@ Check:
 docker ps
 ```
 
-PostgreSQL connection details are configured only in the ignored local `backend/.env` file. Keep credentials there and out of source control.`r`n`r`n## 2. Backend
+PostgreSQL connection details are configured only in the ignored local `backend/.env` file. Keep credentials there and out of source control.
+
+## 2. Backend
 
 ```powershell
 cd backend
@@ -424,7 +426,7 @@ What is my email?
 Expected:
 
 ```text
-Contact via GitHub Issues.
+a demo email address
 ```
 
 The UI should show:
@@ -444,7 +446,7 @@ What is my email?
 Expected:
 
 ```text
-Contact via GitHub Issues.
+a demo email address
 ```
 
 The same tool is called, but the backend supplies a different current user ID.
