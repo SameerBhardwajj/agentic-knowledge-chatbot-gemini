@@ -1,0 +1,17 @@
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: agentic-kb-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: agentic_chat
+      POSTGRES_USER: app_user
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set_POSTGRES_PASSWORD_locally}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./backend/db/init.sql:/docker-entrypoint-initdb.d/01-init.sql:ro
+volumes:
+  postgres_data:
