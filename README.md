@@ -417,7 +417,7 @@ because refund policy is not in the seeded KB.
 
 ### Test 3 — User tool
 
-Select Sameer and ask:
+Select Demo User 1 and ask:
 
 ```text
 What is my email?
@@ -437,7 +437,7 @@ Tool: get_current_user_profile
 
 ### Test 4 — Switch user
 
-Select Priya and ask:
+Select Demo User 2 and ask:
 
 ```text
 What is my email?
